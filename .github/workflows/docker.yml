@@ -36,4 +36,4 @@ jobs:
           push: true
           tags: ${{ secrets.DOCKER_HUB_USERNAME }}/yova:latest
           cache-from: type=registry,ref=${{ secrets.DOCKER_HUB_USERNAME }}/yova:buildcache
-          cache-to: type=registry,ref=${{ secrets.DOCKER_HUB_USERNAME }}/yovabuildcache,mode=max
+          cache-to: type=registry,ref=${{ secrets.DOCKER_HUB_USERNAME }}/yova:buildcache,mode=max
